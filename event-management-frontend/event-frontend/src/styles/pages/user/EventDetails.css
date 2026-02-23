@@ -1,0 +1,143 @@
+/* ============================= */
+/* PAGE BACKGROUND */
+/* ============================= */
+
+body {
+  background: #f4f6f9;
+}
+
+/* ============================= */
+/* MAIN CONTAINER */
+/* ============================= */
+
+.event-details-container {
+  max-width: 450px;   /* smaller */
+  margin: 40px auto;  /* reduced top gap */
+  padding: 28px 32px; /* tighter padding */
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ============================= */
+/* MAIN TITLE (Startup Meetup) */
+/* ============================= */
+
+.event-details-container h2 {
+  font-size: 20px;     /* reduced */
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+/* ============================= */
+/* SECOND TITLE (Networking event) */
+/* ============================= */
+
+.event-details-container p:first-of-type {
+  font-size: 15px;     /* increased */
+  font-weight: 600;    /* medium bold */
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+/* ============================= */
+/* NORMAL TEXT */
+/* ============================= */
+
+.event-details-container p {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 6px 0;
+}
+
+.event-details-container strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* ============================= */
+/* TICKET SECTION */
+/* ============================= */
+
+.ticket-row {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.ticket-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.counter-btn:hover {
+  background: #e5e7eb;
+}
+
+.ticket-count {
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* ============================= */
+/* BOOK BUTTON */
+/* ============================= */
+
+.book-ticket-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 11px;
+  background: #2dce89;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.book-ticket-btn:hover {
+  background: #24b47e;
+}
+
+.book-ticket-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+/* ============================= */
+/* MESSAGE */
+/* ============================= */
+
+.booking-message {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #e11d48;
+}

@@ -1,0 +1,155 @@
+/* Container to center card */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+  min-height: calc(100vh - 80px); /* adjust for navbar if any */
+  background-color: #f4f6f8;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Card */
+.profile-card {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  padding: 2rem 2rem 3rem 2rem;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #4f46e5;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -60px auto 1rem auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Name & Role */
+.profile-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  color: #111;
+}
+
+.profile-role {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Details */
+.profile-details {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row .label {
+  font-weight: 500;
+  color: #555;
+}
+
+.detail-row .value {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Edit Button */
+.edit-btn {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #3730a3;
+}
+
+/* Loading */
+.profile-loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .profile-card {
+    padding: 2rem 1rem 2.5rem 1rem;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .detail-row .value {
+    margin-top: 0.3rem;
+  }
+}
+/* Existing styles remain */
+
+/* Input fields when editing */
+.edit-input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Save / Cancel buttons */
+.save-btn {
+  background-color: #16a34a; /* green */
+}
+
+.save-btn:hover {
+  background-color: #15803d;
+}
+
+.cancel-btn {
+  background-color: #ef4444; /* red */
+}
+
+.cancel-btn:hover {
+  background-color: #b91c1c;
+}

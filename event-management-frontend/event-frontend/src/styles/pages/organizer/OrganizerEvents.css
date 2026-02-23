@@ -1,0 +1,194 @@
+/* Main Layout */
+.organizer-dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f6f9;
+}
+
+/* Sidebar */
+.organizer-sidebar {
+  width: 250px;
+  background-color: #1e293b;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.organizer-sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.organizer-sidebar button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 12px;
+  margin-bottom: 12px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.organizer-sidebar button:hover {
+  background-color: #334155;
+}
+
+/* Main Content */
+.organizer-main {
+  flex: 1;
+  padding: 40px;
+}
+
+.organizer-main h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.organizer-main p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* No events message */
+.no-events {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Event Cards Container */
+.organizer-event-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Card */
+.organizer-event-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.organizer-event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.organizer-event-card h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.organizer-event-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Card Buttons */
+.organizer-card-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.organizer-card-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* View Button */
+.organizer-card-actions button:first-child {
+  background-color: #2563eb;
+  color: white;
+}
+
+.organizer-card-actions button:first-child:hover {
+  background-color: #1d4ed8;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #dc2626;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #b91c1c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .organizer-dashboard-container {
+    flex-direction: column;
+  }
+
+  .organizer-sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .organizer-sidebar h2 {
+    display: none;
+  }
+
+  .organizer-main {
+    padding: 20px;
+  }
+}
+
+/* ============================= */
+/* ORGANIZER STATUS BADGE */
+/* ============================= */
+
+.organizer-event-card {
+  position: relative;
+}
+
+.organizer-status-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.organizer-status-badge.upcoming {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.organizer-status-badge.ongoing {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+
+.organizer-status-badge.completed {
+  background: #fee2e2;
+  color: #dc2626;
+}
