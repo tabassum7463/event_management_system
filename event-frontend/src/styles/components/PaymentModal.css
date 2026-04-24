@@ -1,0 +1,81 @@
+.payment-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 13, 11, 0.52);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.payment-modal-card {
+  width: min(420px, 100%);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem;
+  box-shadow: var(--shadow-strong);
+  position: relative;
+  text-align: center;
+}
+
+.payment-modal-card h2 {
+  margin-bottom: 0.7rem;
+}
+
+.close-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.close-icon:hover {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.qr-instruction {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.7rem;
+}
+
+.payment-buttons {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 0.65rem 0.95rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-strong);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.success-message {
+  color: var(--success);
+  font-weight: 800;
+  margin-bottom: 0.8rem;
+}

@@ -1,0 +1,83 @@
+.my-bookings-layout {
+  min-height: calc(100vh - 78px);
+  display: flex;
+}
+
+.my-bookings-main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.my-bookings-container {
+  width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.my-bookings-container h2 {
+  margin-bottom: 0.9rem;
+}
+
+.booking-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-soft);
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 0.55rem;
+}
+
+.booking-card p {
+  margin-bottom: 0.36rem;
+  color: var(--text-muted);
+}
+
+.booking-card p strong {
+  color: var(--text);
+}
+
+.status {
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.status.confirmed {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.status.cancelled {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.cancel-btn {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.85rem;
+  background: var(--danger);
+  color: #fff;
+  font-weight: 700;
+}
+
+.center-text {
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 960px) {
+  .my-bookings-layout {
+    flex-direction: column;
+  }
+
+  .my-bookings-main {
+    padding: 1rem;
+  }
+}

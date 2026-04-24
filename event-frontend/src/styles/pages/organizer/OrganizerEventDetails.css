@@ -1,0 +1,86 @@
+.event-details-container {
+  width: min(920px, 96%);
+  margin: 1.8rem auto;
+}
+
+.event-details-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-soft);
+  padding: 1.2rem;
+}
+
+.event-details-card h1 {
+  margin-bottom: 0.4rem;
+}
+
+.event-details-card .description {
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.details-grid p {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.62rem;
+  color: var(--text-muted);
+}
+
+.details-grid strong {
+  color: var(--text);
+}
+
+.editable-field,
+.disabled-field {
+  width: 100%;
+}
+
+.editable-field {
+  border: 1px solid var(--success);
+  background: color-mix(in srgb, var(--success) 8%, var(--bg-elevated));
+}
+
+.disabled-field {
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--text-muted) 10%, var(--bg-elevated));
+  color: var(--text-muted);
+}
+
+.action-buttons {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.55rem;
+}
+
+.action-buttons button {
+  padding: 0.66rem 0.9rem;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+
+.action-buttons button:first-child {
+  background: var(--primary);
+  color: #fff;
+  border-color: transparent;
+}
+
+.action-buttons .delete-btn {
+  background: var(--danger);
+  color: #fff;
+  border-color: transparent;
+}
+
+@media (max-width: 800px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}

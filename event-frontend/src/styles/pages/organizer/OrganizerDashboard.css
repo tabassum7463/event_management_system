@@ -1,0 +1,80 @@
+.organizer-dashboard-container {
+  min-height: calc(100vh - 78px);
+  display: flex;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.dashboard-hero {
+  margin-bottom: 1rem;
+}
+
+.hero-btn {
+  padding: 0.64rem 0.95rem;
+  background: #fff;
+  color: #102f29;
+  font-weight: 800;
+}
+
+.my-events h2 {
+  margin-bottom: 0.7rem;
+}
+
+.event-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.9rem;
+}
+
+.event-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  padding: 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.event-card h3 {
+  margin-bottom: 0.45rem;
+}
+
+.event-card p {
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.card-actions button {
+  flex: 1;
+  padding: 0.5rem;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+
+.card-actions button:first-child {
+  background: var(--primary);
+  color: #fff;
+  border-color: transparent;
+}
+
+.card-actions .delete-btn {
+  background: var(--danger);
+  color: #fff;
+  border-color: transparent;
+}
+
+@media (max-width: 960px) {
+  .organizer-dashboard-container {
+    flex-direction: column;
+  }
+}

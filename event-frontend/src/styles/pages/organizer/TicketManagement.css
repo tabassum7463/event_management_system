@@ -1,0 +1,39 @@
+.ticket-management-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 32px;
+}
+
+.tickets-section, .waitlist-section {
+  margin-bottom: 32px;
+}
+
+.ticket-card, .waitlist-card {
+  background: #f3f4f6;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondary-btn {
+  background: #dc2626;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background: #991b1b;
+}
+
+.form-message {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #16a34a;
+}

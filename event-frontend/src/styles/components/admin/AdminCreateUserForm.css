@@ -1,0 +1,42 @@
+.create-user-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.create-user-card {
+  width: min(440px, 100%);
+  padding: 1.2rem;
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-soft);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.form-group label {
+  color: var(--text-muted);
+}
+
+.create-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.74rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+  color: #fff;
+  font-weight: 700;
+}
+
+.form-errors {
+  background: var(--danger-soft);
+  border: 1px solid color-mix(in srgb, var(--danger) 35%, transparent);
+  padding: 0.6rem;
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+}

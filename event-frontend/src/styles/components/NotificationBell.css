@@ -1,0 +1,82 @@
+.notification-bell {
+  position: relative;
+}
+
+.bell-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -7px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  background: var(--danger);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: min(320px, 90vw);
+  max-height: 360px;
+  overflow-y: auto;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.no-notifications {
+  padding: 0.9rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.notification-item {
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.2s ease;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item:hover {
+  background: color-mix(in srgb, var(--primary) 8%, var(--bg-elevated));
+}
+
+.notification-item.unread {
+  background: color-mix(in srgb, var(--accent) 14%, var(--bg-elevated));
+}
+
+.notification-item .message {
+  font-size: 0.86rem;
+  color: var(--text);
+}
+
+.notification-item .time {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}

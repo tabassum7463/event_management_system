@@ -1,0 +1,96 @@
+.profile-container {
+  min-height: calc(100vh - 78px);
+  display: grid;
+  place-items: center;
+  padding: 1.2rem;
+}
+
+.profile-card {
+  width: min(530px, 100%);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 2rem 1.6rem 1.5rem;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 999px;
+  margin: -64px auto 0.8rem;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 24px rgba(12, 47, 40, 0.24);
+}
+
+.profile-name {
+  color: var(--text);
+}
+
+.profile-role {
+  margin-top: 0.2rem;
+  color: var(--text-muted);
+}
+
+.profile-details {
+  margin-top: 1rem;
+  text-align: left;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.9rem;
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: var(--text-muted);
+}
+
+.value {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.edit-input {
+  width: 100%;
+  margin-top: 0.55rem;
+}
+
+.edit-btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.7rem;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.save-btn {
+  background: var(--success);
+}
+
+.cancel-btn {
+  background: var(--danger);
+}
+
+.profile-loading {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,73 @@
+.attendees-container {
+  min-height: calc(100vh - 78px);
+  display: flex;
+}
+
+.attendees-main {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.attendees-main h1 {
+  margin-bottom: 1rem;
+}
+
+.attendees-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+
+.summary-card {
+  border: 1px solid var(--border);
+  background: linear-gradient(145deg, color-mix(in srgb, var(--primary) 18%, var(--bg-elevated)), var(--bg-elevated));
+  border-radius: var(--radius-md);
+  padding: 0.85rem;
+}
+
+.summary-card h3 {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.summary-card p {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.attendees-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bg-elevated);
+}
+
+.attendees-table thead {
+  background: color-mix(in srgb, var(--primary) 18%, var(--bg-elevated));
+}
+
+.attendees-table th,
+.attendees-table td {
+  text-align: left;
+  padding: 0.72rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.attendees-table tbody tr:hover {
+  background: color-mix(in srgb, var(--primary) 8%, transparent);
+}
+
+@media (max-width: 960px) {
+  .attendees-container {
+    flex-direction: column;
+  }
+
+  .attendees-summary {
+    grid-template-columns: 1fr;
+  }
+}

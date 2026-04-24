@@ -1,0 +1,79 @@
+.event-details-container {
+  width: min(620px, 96%);
+  margin: 2rem auto;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 1.45rem;
+}
+
+.event-title {
+  margin-bottom: 0.25rem;
+}
+
+.event-subtitle {
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.event-details-container p {
+  margin-bottom: 0.48rem;
+  color: var(--text-muted);
+}
+
+.event-details-container strong {
+  color: var(--text);
+}
+
+.ticket-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+}
+
+.ticket-label {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.ticket-counter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.counter-btn {
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text);
+}
+
+.ticket-count {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.book-ticket-btn {
+  width: 100%;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+  color: #fff;
+  padding: 0.75rem;
+  font-weight: 800;
+}
+
+.booking-message {
+  margin-top: 0.65rem;
+  background: var(--danger-soft);
+  border: 1px solid color-mix(in srgb, var(--danger) 35%, transparent);
+  color: var(--danger);
+  border-radius: 10px;
+  padding: 0.55rem;
+}

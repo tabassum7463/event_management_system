@@ -1,0 +1,46 @@
+.admin-users-block h2 {
+  margin-bottom: 1rem;
+}
+
+.admin-users-block > label {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.admin-users-block > select {
+  margin: 0.5rem 0.65rem 1rem 0;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.admin-table thead {
+  background: color-mix(in srgb, var(--primary) 18%, var(--bg-elevated));
+}
+
+.admin-table th,
+.admin-table td {
+  text-align: left;
+  padding: 0.7rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-table td select {
+  min-width: 125px;
+}
+
+.admin-table tbody tr:hover {
+  background: color-mix(in srgb, var(--primary) 8%, transparent);
+}
+
+.admin-table td button {
+  background: var(--danger);
+  color: #fff;
+  padding: 0.48rem 0.7rem;
+}

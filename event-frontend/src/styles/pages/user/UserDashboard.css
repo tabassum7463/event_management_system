@@ -1,0 +1,93 @@
+.user-dashboard-container {
+  min-height: calc(100vh - 78px);
+  display: flex;
+}
+
+.dashboard-main {
+  flex: 1;
+  padding: 0;
+}
+
+.hero {
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hero-image-banner .hero-image {
+  height: 360px;
+}
+
+.hero-image-banner .hero-overlay {
+  padding-inline: 2rem;
+}
+
+.live-events,
+.upcoming-events {
+  padding: 1rem 1.2rem 1.2rem;
+}
+
+.live-events h2,
+.upcoming-events h2 {
+  margin-bottom: 0.7rem;
+}
+
+.upcoming-event-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.9rem;
+}
+
+.upcoming-event-card {
+  position: relative;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  padding: 0.95rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.live-pill {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--danger);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.16rem 0.55rem;
+  font-size: 0.66rem;
+  font-weight: 800;
+}
+
+.upcoming-event-card h3 {
+  margin-bottom: 0.45rem;
+  padding-right: 3rem;
+}
+
+.upcoming-event-card p {
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+.upcoming-event-card button {
+  margin-top: 0.55rem;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.52rem 0.78rem;
+  font-weight: 700;
+}
+
+@media (max-width: 960px) {
+  .user-dashboard-container {
+    flex-direction: column;
+  }
+
+  .hero-image-banner .hero-image {
+    height: 240px;
+  }
+
+  .live-events,
+  .upcoming-events {
+    padding: 1rem;
+  }
+}

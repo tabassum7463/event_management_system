@@ -1,0 +1,116 @@
+.events-layout {
+  min-height: calc(100vh - 78px);
+  display: flex;
+}
+
+.events-container {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+.events-container h2 {
+  margin-bottom: 0.9rem;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(130px, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.search-container button {
+  padding: 0.7rem;
+  font-weight: 700;
+}
+
+.search-container button:first-of-type {
+  background: var(--primary);
+  color: #fff;
+}
+
+.search-container button:last-of-type {
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.95rem;
+}
+
+.event-card {
+  position: relative;
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.event-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  padding-right: 5.8rem;
+}
+
+.event-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.event-card p strong {
+  color: var(--text);
+}
+
+.status-badge {
+  position: absolute;
+  top: 0.95rem;
+  right: 0.95rem;
+  padding: 0.26rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.status-badge.upcoming {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.status-badge.ongoing {
+  background: var(--warning-soft);
+  color: var(--warning);
+}
+
+.status-badge.completed {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.event-card button {
+  width: 100%;
+  margin-top: 0.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+  color: #fff;
+  padding: 0.66rem;
+  font-weight: 700;
+}
+
+.event-card button:disabled {
+  background: color-mix(in srgb, var(--text-muted) 35%, var(--bg-muted));
+  color: color-mix(in srgb, var(--text) 65%, #fff);
+}
+
+@media (max-width: 960px) {
+  .events-layout {
+    flex-direction: column;
+  }
+
+  .search-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

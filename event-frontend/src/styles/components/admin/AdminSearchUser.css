@@ -1,0 +1,23 @@
+.admin-search-block h2 {
+  margin-bottom: 1rem;
+}
+
+.admin-search-block input {
+  margin-right: 0.65rem;
+}
+
+.admin-search-block > button {
+  padding: 0.65rem 0.9rem;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+}
+
+.search-result {
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow-soft);
+  padding: 0.85rem;
+}
